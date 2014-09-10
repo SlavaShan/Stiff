@@ -1,0 +1,77 @@
+/* IE8 */
+
+.header {
+	-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/header-bg.jpg',sizingMethod='scale')";
+}
+
+.header-wrap .center .order-out h2 {
+    padding-top: 10px;
+}
+
+.header-wrap .center .order-out a.master-order-out {
+    margin-top: 5px;
+} 
+
+.our-company-innum-wrap .oci-content-block {
+    margin-right: 24px;
+}
+
+.profitable-work {
+    -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/profitable-work-bg.jpg',sizingMethod='scale')";
+}
+
+.profitable-work-wrap .pw-content-block {
+    margin-right: 22px;
+}
+
+.profitable-work-wrap .order-out h2 {
+    padding-top: 10px;
+}
+
+.profitable-work-wrap .order-out a.master-order-out {
+    margin-top: 5px;
+}
+
+.what-work-wedo-wrap .ww-content-block {
+    margin-right: 12px;
+}
+
+.made-objects-wrap .mo-content-block {
+    float: left;
+    margin-right: 6px;
+    width: 310px;
+    height: 430px;
+    color: #494949;
+    text-align: center;
+}
+
+.wedo-repairs {
+    -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/wedo-repairs-bg.jpg',sizingMethod='scale')";
+}
+
+.wedo-repairs-wrap .order-out h2 {
+	padding-top: 10px;
+}
+
+.wedo-repairs-wrap .wr-content-block {
+    margin: 0 30px;
+}
+
+.wedo-repairs-wrap .order-out a.master-order-out {
+    margin-top: 5px;
+}
+
+.faq {
+    -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/faq-bg.jpg',sizingMethod='scale')";
+}
+
+.faq-wrap .order-out h2 {
+	padding-top: 10px;
+}
+
+.faq-wrap .order-out a.master-order-out {
+    margin-top: 5px;
+} 
+
+
+/* END IE8 */

@@ -1,0 +1,1575 @@
+@font-face {
+    font-family: 'PFDinDisplayPro-Reg';
+    src: url(../fonts/PFDinDisplayPro-Reg.ttf);
+}
+
+@font-face {
+    font-family: 'PFDinDisplayPro-Med';
+    src: url(../fonts/PFDinDisplayPro-Med.ttf);
+}
+
+@font-face {
+    font-family: 'PFAgoraSansPro-Medium';
+    src: url(../fonts/PFAgoraSansPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'PFAgoraSansPro-Reg';
+    src: url(../fonts/PFAgoraSansPro-Reg.ttf);
+}
+
+@font-face {
+    font-family: 'PFAgoraSansPro-Bold';
+    src: url(../fonts/PFAgoraSansPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'NeoSansCyr-Regular';
+    src: url(../fonts/NeoSansCyr-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'NeoSansCyr-Medium';
+    src: url(../fonts/NeoSansCyr-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'NeoSansCyr-Italic';
+    src: url(../fonts/NeoSansCyr-Italic.ttf);
+}
+
+
+/* Hack retained to preserve specificity */
+/**
+ * HTML5 ✰ Boilerplate
+ *
+ * style.css contains a reset, font normalization and some base styles.
+ *
+ * Credit is left where credit is due.
+ * Much inspiration was taken from these projects:
+ * - yui.yahooapis.com/2.8.1/build/base/base.css
+ * - camendesign.com/design/
+ * - praegnanz.de/weblog/htmlcssjs-kickstart
+ */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/**
+ * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
+ */
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
+}
+/* Hack retained to preserve specificity */
+/* Normalize monospace sizing:
+   en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+/**
+ * Minimal base styles.
+ */
+/* 1) Always force a scrollbar in non-IE 
+   2) Remove iOS text size adjust without disabling user zoom: www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* j.mp/webkit-tap-highlight-color */
+a:link {
+  -webkit-tap-highlight-color: #fff;
+}
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover,
+a:active {
+  outline: none;
+}
+a,
+a:active,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+ul,
+ol {
+  list-style: none;
+}
+ol {
+  list-style-type: decimal;
+}
+/* Remove margins for navigation lists */
+nav ul,
+nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+small {
+  font-size: 85%;
+}
+b,
+strong,
+th {
+  font-weight: bold;
+}
+td {
+  vertical-align: top;
+}
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+pre {
+  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+.ie6 legend,
+.ie7 legend {
+  margin-left: -7px;
+}
+/* 1) Make inputs and buttons play nice in IE: www.viget.com/inspire/styling-the-button-element-in-internet-explorer/
+   2) WebKit browsers add a 2px margin outside the chrome of form elements. 
+      Firefox adds a 1px margin above and below textareas 
+   3) Set font-size to match <body>'s, and font-family to sans-serif 
+   4) Align to baseline */
+button,
+input,
+select,
+textarea {
+  width: auto;
+  overflow: visible;
+  margin: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+  vertical-align: baseline;
+}
+/* 1) Remove default scrollbar in IE: www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/
+   2) Align to text-top */
+textarea {
+  overflow: auto;
+  vertical-align: text-top;
+}
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+input[type="image"],
+button {
+  cursor: pointer;
+}
+/* Remove extra padding and inner border in Firefox */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* Colors for form validity */
+input:invalid,
+textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+/* Bicubic resizing for non-native sized IMG:
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+/**
+ * You might tweak these..
+ */
+body,
+select,
+input,
+textarea {
+  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
+
+  color: #444;
+  /* Set your base font here, to apply evenly */
+
+  /* font-family: Georgia, serif;  */
+
+}
+/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+p.browsehappy a {
+  color: red;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    color: #000;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    line-height: 1.42857;
+}
+
+body {
+    background: url(../images/bg.jpg);
+    *zoom: 1;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1000px;
+}
+
+
+/* HEADER */
+
+.header {
+    background: url(../images/header-bg1.jpg);
+    background-position: top center;
+    height: 658px;
+    min-width: 1000px;
+}
+
+.header-wrap {
+    position: relative;
+    height: 670px;
+}
+
+.header-wrap a.logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: url(../images/logo.png);
+    width: 122px;
+    height: 77px;
+}
+
+.header-wrap span.description {
+    position: relative;
+    top: 35px;
+    left: 155px;
+    font: 400 23px 'PFDinDisplayPro-Reg';
+}
+
+.header-wrap .right-side {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 250px;
+    text-align: right;
+}
+
+.header-wrap .right-side span.contact-phone {
+    margin-right: 10px;
+    font: 31px 'PFDinDisplayPro-Med';
+}
+
+.header-wrap .right-side a.request-call-back {
+    display: block;
+    margin: 5px 0 0 25px;
+    padding: 9px;
+    background: url(../images/request-call-back-btn.png);
+    width: 216px;
+    height: 38px;
+    font: 14px 'NeoSansCyr-Regular';
+    text-align: center;
+    text-decoration: none;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.header-wrap .right-side a.request-call-back:hover {
+    color: #000;
+}
+
+.header-wrap .center {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.header-wrap .center .h1 span {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 4px 10px;
+    background: #ffc903;
+    font: 40px 'PFAgoraSansPro-Bold';
+    color: #fff;
+    text-shadow: 1px 1px 1px #7b6100;
+}
+
+.header-wrap .center .order-out:before {
+    position: absolute;
+    top: -26px;
+    left: 408px;
+    content: '';
+    background: url(../images/triangle-icon.png);
+    width: 50px;
+    height: 26px;
+}
+
+.header-wrap .center .order-out {
+    position: relative;
+    margin-top: 80px;
+    margin-left: 70px;
+    width: 860px;
+    height: 185px;
+    background: #fff;
+    border: 3px solid #ffd200;
+    border-radius: 7px;
+}
+
+.header-wrap .center .order-out h2 {
+    padding-top: 15px;
+    font: 400 27px "PFDinDisplayPro-Reg";
+}
+
+.header-wrap .center .order-out a.master-order-out {
+    display: inline-block;
+    margin-top: 20px;
+    font: 19px 'PFDinDisplayPro-Med';
+    line-height: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(../images/master-order-out-btn.png);
+    width: 435px;
+    height: 67px;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease;
+} 
+
+.header-wrap .center .order-out a.master-order-out:hover {
+    text-decoration: none;
+    color: #000;
+}
+ 
+/* END HEADER */
+
+/* OUR-COMPANY-INNUM */
+
+.our-company-innum-wrap {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.our-company-innum-wrap .oci-title {
+    position: relative;
+    text-align: center;
+}
+
+.our-company-innum-wrap .oci-title:before {
+    position: absolute;
+    top: 22px;
+    left: 45px;
+    content: '';
+    background: url(../images/oci-tit-left.png);
+    width: 158px;
+    height: 9px;
+}
+
+.our-company-innum-wrap .oci-title:after {
+    position: absolute;
+    top: 22px;
+    right: 45px;
+    content: '';
+    background: url(../images/oci-tit-right.png);
+    width: 158px;
+    height: 9px;
+}
+
+.our-company-innum-wrap .oci-title h3 {
+    font: 40px 'PFAgoraSansPro-Bold';
+    color: #494949;
+    text-align: center;
+}
+
+.our-company-innum-wrap .oci-content {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    height: 170px;
+}
+
+.our-company-innum-wrap .oci-content:after {
+    position: absolute;
+    bottom: -70px;
+    left: 30px;
+    content: '';
+    background: url(../images/oci-devider.png);
+    width: 900px;
+    height: 7px;
+}
+
+.our-company-innum-wrap .oci-content-block {
+    float: left;
+    margin-right: 30px;
+    width: 170px;
+    height: 170px;
+    background: #fff;
+    border: 3px solid #ffd200;
+    border-radius: 88px;
+    text-align: center;
+    -webkit-box-shadow: inset 5px 5px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 5px 5px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 5px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.our-company-innum-wrap .oci-content-block:last-child {
+    margin-right: 0;
+}
+
+.our-company-innum-wrap .oci-content-block h4 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font: 26px 'NeoSansCyr-Medium';
+}
+
+.our-company-innum-wrap .oci-content-block.third h4 {
+    margin: 48px 0 16px;
+    font: 18px 'NeoSansCyr-Medium';
+}
+
+.our-company-innum-wrap .oci-content-block span {
+    font: 14px 'NeoSansCyr-Regular';    
+}
+
+/* END OUR-COMPANY-INNUM */
+
+/* PROFITABLE-WORK */
+
+.profitable-work {
+    position: relative;
+    background: url(../images/profitable-work-bg.jpg);
+    background-position: top center;
+    height: 845px;
+    min-width: 1000px;
+    overflow: hidden;
+}
+
+.profitable-work-wrap {
+    margin-top: 50px;
+}
+
+.profitable-work-wrap .pw-title {
+    position: relative;
+    text-align: center;
+}
+
+.profitable-work-wrap .pw-title h3 {
+    display: inline-block;
+    padding: 0 65px;
+    font: 40px 'PFAgoraSansPro-Bold';
+    background: #ffc903;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px #7b6100;
+}
+
+.profitable-work-wrap .pw-content {
+    position: relative;
+    margin-top: 60px;
+    height: 100%;
+}
+
+.profitable-work-wrap .pw-content-block {
+    float: left;
+    margin-right: 30px;
+    padding: 0 15px 20px 15px;
+    width: 220px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.profitable-work-wrap .pw-content-block:last-child {
+    margin-right: 0;
+}
+
+.profitable-work-wrap .pw-content-block img {
+    margin-top: 15px;
+}
+
+.profitable-work-wrap .pw-content-block h4 {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font: 26px 'NeoSansCyr-Medium';
+    border-bottom: 1px solid #fff;
+}
+
+.profitable-work-wrap .pw-content-block span {
+    font: 19px 'PFDinDisplayPro-Med';
+    text-align: center;
+}
+
+.profitable-work-wrap .order-out:before {
+    position: absolute;
+    top: -26px;
+    left: 408px;
+    content: '';
+    background: url(../images/triangle-icon.png);
+    width: 50px;
+    height: 26px;
+}
+
+.profitable-work-wrap .order-out {
+    position: relative;
+    margin-top: 70px;
+    margin-left: 53px;
+    width: 860px;
+    height: 185px;
+    background: #fff;
+    border: 3px solid #ffd200;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.profitable-work-wrap .order-out h2 {
+    padding-top: 15px;
+    font: 400 27px "PFDinDisplayPro-Reg";
+}
+
+.profitable-work-wrap .order-out a.master-order-out {
+    display: inline-block;
+    margin-top: 20px;
+    font: 19px 'PFDinDisplayPro-Med';
+    line-height: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(../images/master-order-out-btn.png);
+    width: 435px;
+    height: 67px;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease;
+} 
+
+.profitable-work-wrap .order-out a.master-order-out:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/* END PROFITABLE-WORK */
+
+/* WHAT-WORK-WEDO */
+
+.what-work-wedo-wrap {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.what-work-wedo-wrap .ww-title:before {
+    position: absolute;
+    top: 22px;
+    left: 10px;
+    content: '';
+    background: url(../images/oci-tit-left.png);
+    width: 158px;
+    height: 9px;
+}
+
+.what-work-wedo-wrap .ww-title:after {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    content: '';
+    background: url(../images/oci-tit-right.png);
+    width: 158px;
+    height: 9px;
+}
+
+.what-work-wedo-wrap .ww-title {
+    position: relative;
+    text-align: center;
+}
+
+.what-work-wedo-wrap .ww-title h3 {
+    display: inline-block;
+    padding: 0 65px;
+    font: 40px 'PFAgoraSansPro-Bold';
+    color: #494949;
+    text-align: center;
+}
+
+.what-work-wedo-wrap .ww-content {
+    position: relative;
+    margin-top: 50px;
+    height: 100%;
+}
+
+.what-work-wedo-wrap .ww-content-block {
+    float: left;
+    margin-right: 20px;
+    width: 310px;
+    border: 1px solid #dbdbd9;
+    background: #fff;
+    color: #494949;
+    text-align: center;
+}
+
+.what-work-wedo-wrap .ww-content-block:last-child {
+    margin-right: 0;
+}
+
+.what-work-wedo-wrap .ww-content-block h4 {
+    margin-bottom: 5px;
+    font: 26px 'PFAgoraSansPro-Medium';
+}
+
+.what-work-wedo-wrap .ww-content-block.one hr {
+    margin: 0;
+    margin-left: 30px;
+    width: 247px;
+}
+
+.what-work-wedo-wrap .ww-content-block.two hr {
+    margin: 0;
+    margin-left: 40px;
+    width: 225px;
+}
+
+.what-work-wedo-wrap .ww-content-block.three hr {
+    margin: 0;
+    margin-left: 90px;
+    width: 130px;
+}
+
+.what-work-wedo-wrap .ww-content-block span {
+    display: inline-block;
+    margin: 15px 0;
+    font: 19px 'PFAgoraSansPro-Bold';
+    text-align: center;
+}
+ 
+.what-work-wedo-wrap .ww-content-block a.what-wedo {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 272px;
+    height: 49px;
+    font: 22px 'PFAgoraSansPro-Medium';
+    line-height: 45px;
+    text-align: center;
+    background: url(../images/what-wedo-btn.png);
+    color: #fff;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.what-work-wedo-wrap .ww-content-block a.what-wedo:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/* END WHAT-WORK-WEDO */
+
+
+/* QUALITY-IN-DETAILS */
+
+.quality-indetails-wrap {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.quality-indetails-wrap .qi-title:before {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    content: '';
+    background: url(../images/oci-tit-left.png);
+    width: 158px;
+    height: 9px;
+}
+
+.quality-indetails-wrap .qi-title:after {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    content: '';
+    background: url(../images/oci-tit-right.png);
+    width: 158px;
+    height: 9px;
+}
+
+.quality-indetails-wrap .qi-title {
+    position: relative;
+    text-align: center;
+}
+
+.quality-indetails-wrap .qi-title h3 {
+    display: inline-block;
+    padding: 0 65px;
+    font: 40px 'PFAgoraSansPro-Bold';
+    color: #494949;
+    text-align: center;
+}
+
+.quality-indetails-wrap .qi-title h3 span {
+    color: #000;
+}
+
+.quality-indetails-wrap .qi-content {
+    position: relative;
+    margin-top: 60px;
+    height: 100%;
+}
+
+.quality-indetails-wrap .qi-content-block {
+    float: left;
+    margin-right: 65px;
+    width: 280px;
+    color: #494949;
+    text-align: center;
+}
+
+.quality-indetails-wrap .qi-content-block img {
+    width: 278px;
+}
+
+.quality-indetails-wrap .qi-content-block.three,.qi-content-block.six {
+    margin-right: 0;
+}
+
+.quality-indetails-wrap .qi-content .first-row {
+    margin-bottom: 30px;
+}
+
+.quality-indetails-wrap .qi-content-block h4 {
+    margin: 10px;
+    font: 26px 'PFDinDisplayPro-Med';
+}
+
+.quality-indetails-wrap .qi-content-block span {
+    display: inline-block;
+    margin: 10px 0;
+    font: 19px 'PFDinDisplayPro-Med';
+    text-align: center;
+}
+
+/* END QUALITY-IN-DETAILS */
+
+/* MADE-OBJECTS */
+
+.made-objects {
+    position: relative;
+    background: url(../images/made-objects-bg.jpg);
+    background-position: top center;
+    height: 653px;
+    min-width: 1000px;
+    overflow: hidden;
+}
+
+.made-objects-wrap {
+    margin-top: 50px;
+    padding: 0 25px;
+}
+
+.made-objects-wrap .mo-title {
+    text-align: center;
+}
+
+.made-objects-wrap .mo-title h3 {
+    display: inline-block;
+    padding: 0 65px;
+    font: 40px 'PFAgoraSansPro-Bold';
+    background: #ffc903;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px #7b6100;
+}
+
+.made-objects-wrap .mo-content {
+    position: relative;
+    margin-top: 60px;
+    height: 100%;
+}
+
+.made-objects-wrap .mo-content-block {
+    float: left;
+    margin-right: 10px;
+    width: 310px;
+    height: 430px;
+    color: #494949;
+    text-align: center;
+}
+
+.made-objects-wrap .mo-content-block:last-child {
+    margin-right: 0;
+}
+
+/*///*/
+
+.made-objects-wrap .mo-content-block.first-section .top-block {
+    margin-bottom: 10px;
+    height: 255px;
+    width: 310px;
+    background: #fff;
+}
+
+.made-objects-wrap .mo-content-block.first-section .top-block img {
+    width: 310px;
+    height: 255px;
+}
+
+.made-objects-wrap .mo-content-block.first-section .bottom-block {
+    height: 165px;
+    width: 310px;
+    background: #fff;
+}
+
+.made-objects-wrap .mo-content-block.first-section .bottom-block img {
+    width: 310px;
+    height: 165px;
+}
+
+/*///*/
+
+.made-objects-wrap .mo-content-block.second-section .top-block .left {
+    float: left;
+    margin-right: 10px;
+    width: 150px;
+    height: 130px;
+    background: #fff;
+}
+
+.made-objects-wrap .mo-content-block.second-section .top-block .left img {
+    width: 150px;
+    height: 130px;
+}
+
+.made-objects-wrap .mo-content-block.second-section .top-block .right {
+    float: right;
+    width: 150px;
+    height: 130px;
+    background: #fff;
+}
+
+.made-objects-wrap .mo-content-block.second-section .top-block .right img {
+    width: 150px;
+    height: 130px;
+}
+
+.made-objects-wrap .mo-content-block.second-section .middle-block {
+    margin: 10px 0;
+    width: 310px;
+    height: 150px;
+    background: #fff;
+}
+
+.made-objects-wrap .mo-content-block.second-section .middle-block img {
+    width: 310px;
+    height: 150px;
+}
+
+.made-objects-wrap .mo-content-block.second-section .bottom-block .left {
+    float: left;
+    margin-right: 10px;
+    width: 150px;
+    height: 130px;
+    background: #fff;
+}
+
+.made-objects-wrap .mo-content-block.second-section .bottom-block .left img {
+    width: 150px;
+    height: 130px;
+}
+
+.made-objects-wrap .mo-content-block.second-section .bottom-block .right {
+    float: right;
+    width: 150px;
+    height: 130px;
+    background: #fff;
+}
+
+.made-objects-wrap .mo-content-block.second-section .bottom-block .right img {
+    width: 150px;
+    height: 130px;
+}
+
+/*///*/
+
+.made-objects-wrap .mo-content-block.third-section .top-block {
+    margin-bottom: 10px;
+    height: 165px;
+    width: 310px;
+    background: #fff;
+}
+
+.made-objects-wrap .mo-content-block.third-section .top-block img {
+    width: 310px;
+    height: 165px;
+}
+
+.made-objects-wrap .mo-content-block.third-section .bottom-block {
+    height: 255px;
+    width: 310px;
+    background: #fff;
+}
+
+.made-objects-wrap .mo-content-block.third-section .bottom-block img {
+    width: 310px;
+    height: 255px;
+}
+
+/*///*/
+
+/* END MADE-OBJECTS */
+
+/* WE-DO-REPAIRS */
+
+.wedo-repairs {
+    position: relative;
+    background: url(../images/wedo-repairs-bg.jpg);
+    background-position: top center;
+    height: 888px;
+    min-width: 1000px;
+    overflow: hidden;
+}
+
+.wedo-repairs-wrap {
+    margin-top: 50px;
+}
+
+.wedo-repairs-wrap .wr-title {
+    text-align: center;
+}
+
+.wedo-repairs-wrap .wr-title h3 {
+    display: inline-block;
+    padding: 0 65px;
+    font: 40px 'PFAgoraSansPro-Bold';
+    background: #ffc903;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px #7b6100;
+}
+
+.wedo-repairs-wrap .wr-content {
+    position: relative;
+    margin-top: 90px;
+    height: 100%;
+}
+
+.wedo-repairs-wrap .wr-content-block {
+    float: left;
+    margin: 0 31px;
+    color: #494949;
+    text-align: center;
+}
+
+.wedo-repairs-wrap .wr-content-block img {
+    width: 260px;
+    height: 260px;
+    border-radius: 130px;
+    border: 5px solid #ffc903;
+}
+
+.wedo-repairs-wrap .wr-content-block h4 {
+    margin: 35px 0 90px 0;
+    font: 28px 'PFDinDisplayPro-Med';
+    color: #fff;
+}
+
+.wedo-repairs-wrap .order-out:before {
+    position: absolute;
+    top: -26px;
+    left: 408px;
+    content: '';
+    background: url(../images/triangle-icon.png);
+    width: 50px;
+    height: 26px;
+}
+
+.wedo-repairs-wrap .order-out {
+    position: relative;
+    margin-left: 53px;
+    width: 860px;
+    height: 185px;
+    background: #fff;
+    border: 3px solid #ffd200;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.wedo-repairs-wrap .order-out h2 {
+    padding-top: 15px;
+    font: 400 27px "PFDinDisplayPro-Reg";
+}
+
+.wedo-repairs-wrap .order-out a.master-order-out {
+    display: inline-block;
+    margin-top: 20px;
+    font: 19px 'PFDinDisplayPro-Med';
+    line-height: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(../images/master-order-out-btn.png);
+    width: 435px;
+    height: 67px;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease;
+} 
+
+.wedo-repairs-wrap .order-out a.master-order-out:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/* END WE-DO-REPAIRS */
+
+/* CUSTOMERS-FEEDBACK */
+
+.customers-feedback-wrap {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.customers-feedback-wrap .cf-title:before {
+    position: absolute;
+    top: 22px;
+    left: 57px;
+    content: '';
+    background: url(../images/oci-tit-left.png);
+    width: 158px;
+    height: 9px;
+}
+
+.customers-feedback-wrap .cf-title:after {
+    position: absolute;
+    top: 22px;
+    right: 57px;
+    content: '';
+    background: url(../images/oci-tit-right.png);
+    width: 158px;
+    height: 9px;
+}
+
+.customers-feedback-wrap .cf-title {
+    position: relative;
+    text-align: center;
+}
+
+.customers-feedback-wrap .cf-title h3 {
+    font: 40px 'PFAgoraSansPro-Bold';
+    color: #494949;
+    text-align: center;
+}
+
+.customers-feedback-wrap .cf-content {
+    position: relative;
+    margin-top: 50px;
+    height: 100%;
+}
+
+.customers-feedback-wrap .cf-content-block {
+    margin-bottom: 25px;
+}
+
+.customers-feedback-wrap .cf-content-block img {
+    float: left;
+    margin-right: 30px;
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+    border: 2px solid #ffd200;
+}
+
+.customers-feedback-wrap .cf-content-block h4 {
+    margin-bottom: 10px;
+    font: 32px 'PFAgoraSansPro-Medium';
+    color: #494949;
+}
+
+.customers-feedback-wrap .cf-content-block span {
+    font: 17px 'PFAgoraSansPro-Reg';
+}
+
+/* ENDCUSTOMERS-FEEDBACK */
+
+/* FAQ */
+
+.faq {
+    background: url(../images/faq-bg.jpg);
+    background-position: top center;
+    height: 890px;
+    min-width: 1000px;
+    overflow: hidden;
+}
+
+.faq-wrap {
+    position: relative;
+    margin-top: 50px;
+}
+
+.faq-wrap .faq-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-wrap .faq-title h3 {
+    display: inline-block;
+    padding: 0 65px;
+    font: 40px 'PFAgoraSansPro-Bold';
+    background: #ffc903;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px #7b6100;
+}
+
+/* accordion */
+
+#accordion-wrap {
+    width: 100%;
+    height: 450px;
+}
+
+#accordion {
+    margin: 0 auto;
+    padding: 0;
+    width: 715px;
+}
+
+#accordion li {
+    padding: 4px 8px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    border-radius: 5px;
+}
+
+#accordion li ul {
+    padding: 0;
+    margin: 0;
+}
+
+#accordion li li {
+    font-weight: normal;
+    background:none;
+    border: 2px solid #f1c00e;
+}
+
+#accordion li span {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    width: 700px;
+    font: 29px 'PFDinDisplayPro-Med';
+    text-align: center;
+    color: #494949;
+    background: #f8f8f8;
+    border-radius: 5px;
+}
+
+#accordion li span:after {
+    position: absolute;
+    top: 45%;
+    right: 25px;
+    background: url(../images/accordeon-arrow1.png);
+    width: 16px;
+    height: 12px;
+    content: '';
+}
+
+#accordion li span:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#ffd200), to(#fff600));
+    background: -webkit-linear-gradient(top, #ffd200, #fff600);
+    background: -moz-linear-gradient(top, #ffd200, #fff600);
+    background: -o-linear-gradient(top, #ffd200, #fff600);
+    background: -ms-linear-gradient(top, #ffd200, #fff600);
+    background: linear-gradient(top, #ffd200, #fff600);
+    background-color: #ffd200;
+}
+
+#accordion li span.active {
+    background: -webkit-gradient(linear, left top, right top, from(#04c308), to(#31b203));
+    background: -webkit-linear-gradient(top, #04c308, #31b203);
+    background: -moz-linear-gradient(top, #04c308, #31b203);
+    background: -o-linear-gradient(top, #04c308, #31b203);
+    background: -ms-linear-gradient(top, #04c308, #31b203);
+    background: linear-gradient(top, #04c308, #31b203);
+    background-color: #04c308;
+    color: #fff;
+}
+
+#accordion li span.active:after {
+    position: absolute;
+    top: 46%;
+    right: 25px;
+    background: url(../images/ellipsis-icon.png);
+    width: 19px;
+    height: 6px;
+    content: '';
+}
+
+#accordion .inner-blc li {
+    margin-left: 100px;
+    margin-top: 20px;
+    text-align: center;
+    width: 500px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+/* end accordion */
+
+.faq-wrap .order-out:before {
+    position: absolute;
+    top: -26px;
+    left: 408px;
+    content: '';
+    background: url(../images/triangle-icon.png);
+    width: 50px;
+    height: 26px;
+}
+
+.faq-wrap .order-out {
+    position: absolute;
+    bottom: -240px;
+    left: 0;
+    margin-left: 65px;
+    width: 860px;
+    height: 185px;
+    background: #fff;
+    border: 3px solid #ffd200;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.faq-wrap .order-out h2 {
+    padding-top: 15px;
+    font: 400 27px "PFDinDisplayPro-Reg";
+}
+
+.faq-wrap .order-out a.master-order-out {
+    display: inline-block;
+    margin-top: 20px;
+    font: 19px 'PFDinDisplayPro-Med';
+    line-height: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(../images/master-order-out-btn.png);
+    width: 435px;
+    height: 67px;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease;
+} 
+
+.faq-wrap .order-out a.master-order-out:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/* END FAQ */
+
+/* MAP */
+
+.map {
+    position: relative;
+    width: 100%;
+    height: 550px;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-width: 1000px;
+    height: 550px;
+    z-index: 0;
+}
+
+.map-wrap.container {
+    text-align: center;
+}
+
+.map-wrap .map-title {
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    z-index: 2;
+}
+
+.map-wrap .map-title h3 {
+    position: relative;
+    display: inline-block;
+    padding: 0 65px;
+    font: 40px 'PFAgoraSansPro-Bold';
+    background: #ffc903;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 1px 1px 1px #7b6100;
+}
+
+.map-wrap .map-contacts {
+    position: relative;
+    display: inline-block;
+    margin-top: 85px;
+    background: url(../images/map-layer.png);
+    width: 293px;
+    height: 294px;
+    font: 17px 'PFDinDisplayPro-Reg';
+    text-align: center;
+    z-index: 2;
+}
+
+.map-wrap .map-contacts p.cont-loc {
+    margin-top: 45px;
+}
+
+.map-wrap .map-contacts p.operation-time {
+    margin-top: 18px;
+}
+
+.map-wrap .map-contacts p.cont-com {
+    margin-top: 18px;
+}
+
+/* END MAP */
+
+/* FOOTER */
+
+.footer {
+    height: 90px;
+    background: #fff;
+}
+
+.footer-wrap {
+    position: relative;
+}
+
+.footer .footer-phone {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    font: 30px 'PFDinDisplayPro-Reg';
+}
+
+.footer .footer-firm {
+    position: absolute;
+    top: 10px;
+    left: 375px;
+    font: 18px 'PFDinDisplayPro-Reg';
+    text-align: center;
+}
+
+.footer .development-company {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+}
+
+.footer .development-company a {
+    font: 19px 'PFDinDisplayPro-Reg';
+    color: #0868c3;
+    text-decoration: underline;
+}
+
+/* END FOOTER */
+
