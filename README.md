@@ -1,2 +1,2 @@
 
-http://webvers.cc.ua/stiff/index.html
+http://webvers.cc.ua/portfolio/stiff/index.html
